@@ -1,0 +1,44 @@
+\documentclass{article}
+\usepackage{amsmath}  % for align* environment
+\usepackage{array}    % for creating tables
+\title {DISCRETE MATHEMATICS}
+\author {SAMMETA SAIPOORNA\\
+               EE23BTECH11055}
+\begin{document}
+Which term of the AP: 3, 8, 13, 18, \ldots, is 78?
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Parameter} & \textbf{Value} \\
+        \hline
+        First term (\( a_1 \)) & 3 \\
+        Common difference (\( d \)) & 5 \\
+        \(n\)-th term (\( a_n \)) & 78 \\
+        \hline
+    \end{tabular}
+    \caption{Input Parameters for Arithmetic Progression}
+    \label{tab:input_parameters}
+\end{table}
+
+
+To find the term number (\( n \)) when the \(n\)-th term (\( a_n \)) is 78 in the arithmetic progression (AP) with the given input parameters, we can use the formula:
+
+\[ a_n = a_1 + (n-1)d \]
+
+Substituting the values from Table~\ref{tab:input_parameters}:
+
+\[ 78 = 3 + (n-1) \times 5 \]
+
+Now, solve for \( n \):
+
+\begin{align*}
+78 &= 3 + 5(n-1) \\
+75 &= 5(n-1) \\
+15 &= n-1 \\
+n &= 16
+\end{align*}
+
+Therefore, the term number (\( n \)) when \( a_n = 78 \) in the given arithmetic progression is 16.
+
+\end{document}
