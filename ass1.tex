@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}  % for align* environment
+\usepackage{array}    % for creating tables
+
+\title{Discrete Mathematics}
+\author{Samméta Saipoorna\\ EE23BTECH11055}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Arithmetic Progression Problem}
+Which term of the arithmetic progression (AP): $3, 8, 13, 18, \ldots$, is 78?
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Parameter} & \textbf{Value} & \textbf{Description} \\
+        \hline
+        $\mathrm{x}(0)$ & 3 & Initial term in the AP \\
+        \hline
+        $\mathrm{d}$ & 5 & Difference between consecutive terms \\
+        \hline
+        $\mathrm{x}(k) \times \mathrm{u}(k)$ & 78 & Target term in the AP \\
+        \hline
+    \end{tabular}
+    \caption{Input Parameters for Arithmetic Progression}
+    \label{tab:input_parameters}
+\end{table}
+
+To find the term number ($k$) when the $k$-th term $\mathrm{x}(k)$ is 78 in the arithmetic progression (AP) with the given input parameters, we can use the formula:
+\begin{align}
+ \mathrm{x}(n) &= [\mathrm{x}(0) + (n-1)\mathrm{d}] \times \mathrm{u}(n) \label{eq:ap_formula} \\
+\end{align}
+Substituting the values from Table~\ref{tab:input_parameters} into Equation~\eqref{eq:ap_formula}:
+\begin{align*}
+ 78 &= 3 + (k-1) \times 5 \\
+ 75 &= 5(k-1) \\
+ 15 &= k-1 \\
+ k &= 16 \\
+\end{align*}
+
+Therefore, the term number ($k$) when $\mathrm{x}(k) = 78$ in the given arithmetic progression is 16.
+
+\end{document}
