@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}  % for align* environment
+
+\title{Arithmetic Progression Problem}
+\author{SAMMETA SAIPOORNA \\
+        EE23BTECH11055}
+\date{}
+
+% Define variables for the arithmetic progression
+\newcommand{\initialterm}{3}
+\newcommand{\commondifference}{5}
+\newcommand{\targetterm}{78}
+
+\begin{document}
+\maketitle
+
+Which term of the arithmetic progression (AP): \(3, 8, 13, 18, \ldots\) is \(78\)?
+
+\section{Input Table:}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+  \hline
+   Parameters & Value & Description \\
+  \hline
+   \(x(0)\) & 3 & Initial Term \\
+  \hline
+   \(d\) & 5 & Common Difference \\
+  \hline
+   \(x(k)\) & 78 & Target Term \\
+  \hline
+  k & ? & Target Term Number\\
+  \hline
+\end{tabular}
+\end{center}
+
+\section{Solution:}
+Let $x(n)$ be the general term of AP where $(n+1)th$ term of AP is found by $x(n)$.\\ 
+Let's solve the problem:
+\begin{align}
+x(n) &= x(0) + (n)d \\
+\text{Let } x(n) &= [\initialterm + (n)\commondifference] \times u(n) \\
+x(k) &= [\initialterm + (k)\commondifference] \times u(k)\\
+\text{Substitute values into the formula:} \\
+\targetterm &= \initialterm + (k) \times \commondifference \\
+75 &= (k) \times 5 \\
+k &= 15
+\end{align}
+
+As $(k+1)th$ term is $x(k)$, 78 is the 16th term of the AP.\\ 
+
+
+\section{Z-Transform:}
+Let the Z-transform of \(x(n)\) be \(X(z)\).
+\begin{align}
+X(z) &= \frac{3 +2\times z^{-1}}{(1 - z^{-1})^2} \quad \text{for all } |z| > 1
+\end{align}
+
+\end{document}
